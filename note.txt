@@ -1,0 +1,8 @@
+-setting react components
+    -meterial UI 
+    -react bootstrap : install: npm i react-bootstrap bootstrao
+
+-setting up path for component in react
+    install react router dom: npm i react-router-dom
+
+    -react app
