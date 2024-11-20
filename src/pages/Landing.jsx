@@ -17,7 +17,7 @@ function Landing() {
         <div className='col-6 mt-5'>
           <h3>Welcome to <span className='text-danger'> Media Player </span></h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusamus animi, ducimus fuga velit sunt sequi excepturi quos minima doloremque possimus, atque, accusantium temporibus natus non in consectetur quod eaque.</p>
-          <Link to={'/home'} style={{textDecoration:"none"}} className='btn-info rounded p-2 m-2 text-warning'>Get Started</Link>
+          <Link to={'/home'} style={{textDecoration:"none"}} className='btn-info rounded p-2 m-3 text-warning'>Get Started</Link>
         </div>
         <div className='col-6'>
             <img src={landingImg} alt="Landing Image" />
@@ -32,7 +32,7 @@ function Landing() {
         <div className='col-lg-4'>
 
         <Card style={{ width: '20rem' }} className='p-3'>
-        <Card.Img variant="top" src={settings}  />
+        <Card.Img variant="top" src={settings} style={{height:"180px"}}  />
         <Card.Body>
         <Card.Title>Managing Videos</Card.Title>
         <Card.Text>
@@ -47,7 +47,7 @@ function Landing() {
         <div className='col-lg-4'>
 
         <Card style={{ width: '20rem' }} className='p-3'>
-        <Card.Img variant="top" src={categories}  />
+        <Card.Img variant="top" src={categories} style={{height:"180px"}}  />
         <Card.Body>
         <Card.Title>Categories Videos</Card.Title>
         <Card.Text>
@@ -61,7 +61,7 @@ function Landing() {
         <div className='col-lg-4'>
 
         <Card style={{ width: '20rem' }} className='p-3'>
-        <Card.Img variant="top" src={history}  />
+        <Card.Img variant="top" src={history} style={{height:"180px"}}  />
         <Card.Body>
         <Card.Title>Managing History</Card.Title>
         <Card.Text>
@@ -75,8 +75,8 @@ function Landing() {
       </div>
     </div>
 
-    <div className='container w-100 border border-dark'>
-      <h3 className='text-warning'>Simple, Fast and powerful</h3>
+    <div className='container w-100 border border-dark mt-5'>
+      <h3 className='text-warning mt-4 '>Simple, Fast and powerful</h3>
       <div className='row'>
         <div className='col-lg-6'>
 

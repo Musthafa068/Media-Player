@@ -5,8 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { addVideo } from '../services/allAPI';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 function Add({setAddVideoResponse}) {
 
@@ -51,6 +50,7 @@ function Add({setAddVideoResponse}) {
           setAddVideoResponse(result.data)
           toast.success(`${result.data.caption} is added to your collection`)
           handleClose()
+          setVideoDetails({caption:"", imageURL:"", YoutubeURL:""})
           
         }
 
@@ -111,14 +111,10 @@ function Add({setAddVideoResponse}) {
         </Modal.Footer>
       </Modal>
 
-      <ToastContainer position="top-center"
- autoClose={3000} theme="colored"
-/>
+   
     </>
   )
 }
 
 export default Add
 
-
-// <iframe width="928" height="522" src="https://www.youtube.com/embed/e1BHIY9p2WU" title="Eyy Banane - Video  | Vaazha | Vipin Das | Anand Menen | Electronic Kili |Siju Sunny |Joemon Jyothir" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

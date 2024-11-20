@@ -6,3 +6,16 @@
     install react router dom: npm i react-router-dom
 
     -react app
+
+
+
+
+
+
+
+
+    how to deploy  json file using node.json
+    ---------------------------------------------
+
+    1.create index.js file in server folder
+    2.

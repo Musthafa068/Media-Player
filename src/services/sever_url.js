@@ -1,2 +1,2 @@
-const server_url="http://localhost:3000"
+const server_url="https://mpserver-ewsg.onrender.com"
 export default server_url

@@ -9,6 +9,10 @@ function Home() {
 
   const [addVideoResponse,setAddVideoResponse]=useState("")
 
+  const [videoDeleteResponseFromCategory,setVideoDeleteResponseFromCategory]=useState("")
+
+  const [deleteVideoFromViewResponse,setDeleteVideoFromViewResponse]=useState("")
+
   return (
     <>
       <div className='container d-flex justify-content-between my-5'>
@@ -22,13 +26,13 @@ function Home() {
         <div className="col-lg-6">
           <h3 className='text-info'>All Videos</h3>
 
-          <View addVideoResponse={addVideoResponse}/>
+          <View addVideoResponse={addVideoResponse} videoDeleteResponseFromCategory={videoDeleteResponseFromCategory} setDeleteVideoFromViewResponse={setDeleteVideoFromViewResponse}/>
 
         </div>
 
         <div className="col-lg-6">
 
-          <Category/>
+          <Category setVideoDeleteResponseFromCategory={setVideoDeleteResponseFromCategory} deleteVideoFromViewResponse={deleteVideoFromViewResponse}/>
           
         </div>
 
